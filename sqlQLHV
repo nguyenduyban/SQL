@@ -43,3 +43,8 @@ where TenKH in (select *
 from KhoaHoc
 where year(NgayBD)=1997 and TenKH like N'Tieng Phap Pho
 Thong%')
+--cau 9
+select diem ,ketqua,xeploai
+from GiaoVien join LopHoc on GiaoVien.MaGV =LopHoc.MaGV join BienLai1 on BienLai1.MaLH =LopHoc.MaLH
+where (HoTen like N'%Tran Thanh' or HoTen like N'%Ho Nhan') and BienLai1.MaKH like N'PT197%'
+go
