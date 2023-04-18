@@ -28,3 +28,18 @@ from LopHoc join BienLail on LopHoc.MaLH BienLai1.MaLH
 group by MaHV
 )
 go
+6)
+select TenLop, TenGV, SiSo, MaLH as [Phòng học]
+from LopHoc join GiaoVien on LopHoc.MaGV=GiaoVien.MaGV
+join KhoaHoc on LopHoc.MaKH=KhoaHoc. MaKH
+where '04/17/1997' between NgayBD and NgayKT
+7)
+select
+8)
+select HocVien.
+from HocVien join BienLai on HocVien. MaHV-BienLai.MaHV
+join KhoaHoc on KhoaHoc.MaKH=BienLai.MaKH
+where TenKH in (select *
+from KhoaHoc
+where year(NgayBD)=1997 and TenKH like N'Tieng Phap Pho
+Thong%')
